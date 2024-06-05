@@ -40,9 +40,9 @@ Chart.register(CategoryScale);
 
 const token = sessionStorage.getItem("token")
 
-const endpoint = "https://afren-main-server.onrender.com/api/toggleClientAvailability"
-const endpoint2 = "https://afren-main-server.onrender.com/api/getOngoingGigs"
-const totalProjectEndpoint = "https://afren-main-server.onrender.com/api/getTotalProjects"
+const endpoint = "https://afren-server-kjt8.onrender.com/api/toggleClientAvailability"
+const endpoint2 = "https://afren-server-kjt8.onrender.com/api/getOngoingGigs"
+const totalProjectEndpoint = "https://afren-server-kjt8.onrender.com/api/getTotalProjects"
 
 
 export default function Client() {

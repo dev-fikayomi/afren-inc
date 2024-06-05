@@ -6,8 +6,8 @@ import toast, { Toaster } from 'react-hot-toast';
 import OtpInput from 'react-otp-input';
 import axios from "axios"
 
-const ENDPOINT = "https://afren-main-server.onrender.com/api/sendClientOTP"
-const ENDPOINT2 = "https://afren-main-server.onrender.com/api/changeClientPassword"
+const ENDPOINT = "https://afren-server-kjt8.onrender.com/api/sendClientOTP"
+const ENDPOINT2 = "https://afren-server-kjt8.onrender.com/api/changeClientPassword"
 
 export default function ClientSettingSecurity() {
     const [token,setToken] = useState(sessionStorage.getItem("token"))

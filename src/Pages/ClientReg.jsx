@@ -8,7 +8,7 @@ import { Oval } from  'react-loader-spinner'
 import Cookies from "js-cookie";
 import { useNavigate } from "react-router-dom";
 
-const endpoint = "https://afren-main-server.onrender.com/api/registerClient"
+const endpoint = "https://afren-server-kjt8.onrender.com/api/registerClient"
 
 export default function ClientReg() {
   const navigate = useNavigate()

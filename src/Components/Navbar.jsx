@@ -52,7 +52,7 @@ export default function Header() {
     useEffect(() => {
         const fetchJobCategories = async () => {
             try {
-                const response = await axios.get('https://afren-main-server.onrender.com/api/getJobCategories', {
+                const response = await axios.get('https://afren-server-kjt8.onrender.com/api/getJobCategories', {
                     headers: {
                         Authorization: `Bearer ${token}`,
                     },

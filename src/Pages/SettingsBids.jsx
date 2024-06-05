@@ -11,7 +11,7 @@ export default function SettingsBids() {
 
   useEffect(() => {
     axios
-      .get("https://afren-main-server.onrender.com/api/getBids", {
+      .get("https://afren-server-kjt8.onrender.com/api/getBids", {
         headers: {
           Authorization: token,
         },

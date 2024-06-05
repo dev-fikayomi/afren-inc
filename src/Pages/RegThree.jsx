@@ -9,7 +9,7 @@ import { useNavigate } from 'react-router-dom';
 
 // import '../Styles/regthree.css'
 
-const ENDPOINT = "https://afren-main-server.onrender.com/api/registerFreelancer"
+const ENDPOINT = "https://afren-server-kjt8.onrender.com/api/registerFreelancer"
 const token = sessionStorage.getItem("token") 
 
 export default function RegThree({func, educationInfo, formObj}) {

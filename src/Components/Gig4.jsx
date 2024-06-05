@@ -5,7 +5,7 @@ import { Oval } from  'react-loader-spinner'
 import { useNavigate } from 'react-router-dom';
 
 const token = sessionStorage.getItem("token")
-const endpoint = "https://afren-main-server.onrender.com/api/createGig"
+const endpoint = "https://afren-server-kjt8.onrender.com/api/createGig"
 
 export default function Gig4({setCount,count,gigInfo, setGigInfo}) {
     const navigate = useNavigate()

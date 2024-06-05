@@ -18,7 +18,7 @@ import { Oval } from  'react-loader-spinner'
 import Avenger from "../Components/Avenger"
 
 
-const ENDPOINT = "https://afren-main-server.onrender.com/api/getAvengers"
+const ENDPOINT = "https://afren-server-kjt8.onrender.com/api/getAvengers"
 
 export default function About() {
     const [team,setTeam] = useState([])

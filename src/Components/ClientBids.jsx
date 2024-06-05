@@ -7,10 +7,10 @@ import axios from "axios"
 import "../../src/style.css"
 
 
-const applictionEndPoint = "https://afren-main-server.onrender.com/api/getApplications"
-const appGetDetailsEndPoint = "https://afren-main-server.onrender.com/api/getApplication"
-const AcceptApplicationEndPoint = "https://afren-main-server.onrender.com/api/acceptApplication"
-const RejectApplicationEndpoint = "https://afren-main-server.onrender.com/api/rejectApplication"
+const applictionEndPoint = "https://afren-server-kjt8.onrender.com/api/getApplications"
+const appGetDetailsEndPoint = "https://afren-server-kjt8.onrender.com/api/getApplication"
+const AcceptApplicationEndPoint = "https://afren-server-kjt8.onrender.com/api/acceptApplication"
+const RejectApplicationEndpoint = "https://afren-server-kjt8.onrender.com/api/rejectApplication"
 
 const token = sessionStorage.getItem("token")
 

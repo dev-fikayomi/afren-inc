@@ -10,7 +10,7 @@ import "../style.css"
 
 const token = sessionStorage.getItem("token")
 
-const API_URL = 'https://afren-main-server.onrender.com/api/getOpenGigs';
+const API_URL = 'https://afren-server-kjt8.onrender.com/api/getOpenGigs';
 
 export default function FreelancerJob() {
     const [projects, setProjects] = useState([]);

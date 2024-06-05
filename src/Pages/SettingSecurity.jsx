@@ -11,8 +11,8 @@ import axios from "axios"
 
 const token = sessionStorage.getItem("token")
 
-const ENDPOINT = "https://afren-main-server.onrender.com/api/sendFreelancerOTP"
-const ENDPOINT2 = "https://afren-main-server.onrender.com/api/changeFreelancerPassword"
+const ENDPOINT = "https://afren-server-kjt8.onrender.com/api/sendFreelancerOTP"
+const ENDPOINT2 = "https://afren-server-kjt8.onrender.com/api/changeFreelancerPassword"
 
 export default function SettingSecurity() {
     const [newPassword, setNewPassword] = useState("")

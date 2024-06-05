@@ -15,9 +15,9 @@ import toast, { Toaster } from 'react-hot-toast';
 
 
 // const token = sessionStorage.getItem("token")
-const gigEndPoint = "https://afren-main-server.onrender.com/api/getGig"
-const ApplicationEndpoint = "https://afren-main-server.onrender.com/api/createApplication"
-const gigWithClientDetailsEndpoint = "https://afren-main-server.onrender.com/api/getGigWithClientDetails"
+const gigEndPoint = "https://afren-server-kjt8.onrender.com/api/getGig"
+const ApplicationEndpoint = "https://afren-server-kjt8.onrender.com/api/createApplication"
+const gigWithClientDetailsEndpoint = "https://afren-server-kjt8.onrender.com/api/getGigWithClientDetails"
 
 
 export default function QuoteForm() {

@@ -10,8 +10,8 @@ import Footer from '../Components/Footer'
 import axios from 'axios'
 
 
-const endpoint = "https://afren-main-server.onrender.com/api/getOpenGigs"
-const allSavedJobEndPoint = "https://afren-main-server.onrender.com/api/getSavedJobs"
+const endpoint = "https://afren-server-kjt8.onrender.com/api/getOpenGigs"
+const allSavedJobEndPoint = "https://afren-server-kjt8.onrender.com/api/getSavedJobs"
 
 
 

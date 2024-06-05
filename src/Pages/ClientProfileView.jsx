@@ -16,7 +16,7 @@ import janedoe from "../assets/afren-images2/jane-doee.png"
 import axios from 'axios'
 
 
-const endpoint = "https://afren-main-server.onrender.com/api/getClient"
+const endpoint = "https://afren-server-kjt8.onrender.com/api/getClient"
 
 export default function ClientProfileView({setVisibleSection}) {
     const [token,setToken] = useState(sessionStorage.getItem("token"))

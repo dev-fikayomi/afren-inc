@@ -6,7 +6,7 @@ import toast, {Toaster} from "react-hot-toast";
 import ellipse31 from "../assets/afren-images2/Ellipse 31.png";
 
 const endPoint =
-  "https://afren-main-server.onrender.com/api/updateClientDetails";
+  "https://afren-server-kjt8.onrender.com/api/updateClientDetails";
 
 export default function ClientSettingsAcc() {
   const [token, setToken] = useState(sessionStorage.getItem("token"));

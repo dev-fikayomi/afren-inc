@@ -8,7 +8,7 @@ import { Oval } from  'react-loader-spinner'
 // import "../Styles/contactUs.css"
 import '../Styles/About.css'
 
-const endpoint = "https://afren-main-server.onrender.com/api/contactUs"
+const endpoint = "https://afren-server-kjt8.onrender.com/api/contactUs"
 const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
 const fullNameRegex = /^[a-zA-Z][a-zA-Z]+ [a-zA-Z][a-zA-Z]+$/;
 const phoneNumberRegex = /^\d{9,}$/;

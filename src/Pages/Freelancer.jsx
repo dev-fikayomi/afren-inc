@@ -25,8 +25,8 @@ import axios from "axios"
 
 // const token = sessionStorage.getItem("token")
 
-const endpoint = "https://afren-main-server.onrender.com/api/toggleFreelancerAvailability"
-const API_URL = 'https://afren-main-server.onrender.com/api/getOpenGigs';
+const endpoint = "https://afren-server-kjt8.onrender.com/api/toggleFreelancerAvailability"
+const API_URL = 'https://afren-server-kjt8.onrender.com/api/getOpenGigs';
 
 
 

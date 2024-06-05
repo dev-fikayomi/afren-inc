@@ -12,7 +12,7 @@ import Footer from '../Components/Footer'
 import axios from "axios"
 
 
-const getNewsEndpoint = "https://afren-main-server.onrender.com//api/getNews"
+const getNewsEndpoint = "https://afren-server-kjt8.onrender.com/api/getNews"
 const postNewsEndpoint = "https://afren-waitlist.onrender.com/api/news"
 
 

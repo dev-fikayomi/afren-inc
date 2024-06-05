@@ -13,7 +13,7 @@ import toast, { Toaster } from "react-hot-toast";
 import { Oval } from "react-loader-spinner";
 import Cookies from "js-cookie";
 
-const endpoint = "https://afren-main-server.onrender.com/api/userSignIn";
+const endpoint = "https://afren-server-kjt8.onrender.com/api/userSignIn";
 
 export default function Login() {
   const [loading, setLoading] = useState(false);

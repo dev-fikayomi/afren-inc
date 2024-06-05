@@ -21,7 +21,8 @@ const Calendar = () => {
 
   useEffect(() => {
     axios
-      .get("https://afren-main-server.onrender.com/api/getAllEvents", {
+    
+      .get("https://afren-server-kjt8.onrender.com/api/getAllEvents", {
         headers: {
           Authorization: token,
         },

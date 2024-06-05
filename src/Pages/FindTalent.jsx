@@ -8,7 +8,7 @@ import axios from "axios"
 
 
 
-const endpoint = "https://afren-main-server.onrender.com/api/getAllFreelancers"
+const endpoint = "https://afren-server-kjt8.onrender.com/api/getAllFreelancers"
 
 // const token = sessionStorage.getItem("token")
 

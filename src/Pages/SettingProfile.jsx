@@ -9,8 +9,8 @@ import rect2 from "../assets/afren-images2/Rectangle 34624339.png"
 import rect3 from "../assets/afren-images2/Rectangle 34624273.png"
 import ellipse2 from "../assets/afren-images2/Ellipse 36.png"
 
-const API_URL = 'https://afren-main-server.onrender.com/api/freelancerWorkHistory';
-const API_URL2 = 'https://afren-main-server.onrender.com/api/getFreelancer';
+const API_URL = 'https://afren-server-kjt8.onrender.com/api/freelancerWorkHistory';
+const API_URL2 = 'https://afren-server-kjt8.onrender.com/api/getFreelancer';
 
 const token = sessionStorage.getItem("token")
 

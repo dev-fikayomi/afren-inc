@@ -12,8 +12,8 @@ import toast, { Toaster } from 'react-hot-toast';
 
 const token = sessionStorage.getItem("token")
 
-const endpoint = "https://afren-main-server.onrender.com/api/saveJob"
-const unSaveEndpoint ="https://afren-main-server.onrender.com/api/unSaveJob"
+const endpoint = "https://afren-server-kjt8.onrender.com/api/saveJob"
+const unSaveEndpoint ="https://afren-server-kjt8.onrender.com/api/unSaveJob"
 
 
 export default function Freelancer({ _id, title, description, price, clientEmail, jobCategory,
