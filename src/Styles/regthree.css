@@ -1,0 +1,334 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Quicksand", sans-serif;
+    box-sizing: border-box;
+}
+#form-cover{
+    display: flex;
+    justify-content: center;
+}
+#form{
+    width: 50%;
+    text-align: center;
+    box-shadow: 0px 0px 10px 1px #d4d4d4;
+    font-family: Quicksand;
+    margin-top: 20px;
+    padding-top: 30px;
+    border-radius: 10px;
+}
+#page-progress{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+
+}
+
+/* .prog-line{
+    width: 20%;
+    height: 1px;
+    background-color: rgba(179, 177, 177, 0.849);
+} */
+.page-num{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: rgba(179, 177, 177, 0.849);
+    border-radius: 50%;
+}
+/* #line-one{
+    background-color: #3ac3d6;
+} */
+/* #line-two{
+    background-color: #3ac3d6;
+} */
+/* #line-three{
+    background-color: #3ac3d6;
+} */
+/* #line-four{
+    background: linear-gradient(90deg, #3ac3d6 50%, rgba(179, 177, 177, 0.849) 50%);
+} */
+/* #pg-one{
+    background-color: #3ac3d6;
+}
+#pg-two{
+    background-color: #3ac3d6;
+}
+#pg-three{
+    background-color: #3ac3d6;
+} */
+form.regthree{
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: start;
+    margin-top: 20px;
+    /* padding-top: 30px; */
+    border-radius: 10px;
+}
+.form-text{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input:focus{
+    outline: none;
+}
+.form-innerdiv{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.form-innerdiv input{
+    width: 48%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.skills {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.skills section {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.skills section .select {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.select .skill {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    width: fit-content;
+    padding: 0 10px;
+    height: 35px;
+    border-radius: 35px;
+}
+.select .skill:hover{
+    cursor: pointer;
+}
+section.skills-section p {
+    font-size: 13px;
+    margin: 0;
+}
+#add-sk{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+#add-sk input{
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+#skill-add{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 17%;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #015b7e;
+    color: white;
+    font-size: 14px;
+}
+#skill-add:hover{
+    cursor: pointer;
+    background-color: #08729c;
+}
+.skill p {
+    font-size: 13px;
+}
+
+.s1 {
+    margin-bottom: 20px;
+}
+
+.s1 .skill {
+    background-color: #015b7e;
+    color: white;
+}
+
+.s2 .skill {
+    background-color: rgba(194, 193, 193, 0.521);
+    color: #015b7e;
+}
+#cert-text{
+    font-size: 12px;
+    margin: 10px 0;
+}
+#cert-div{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.certificates{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    width: fit-content;
+    padding: 0 10px;
+    height: 35px;
+    border-radius: 35px;
+    border: 1px solid #015b7e;
+    background-color: white;
+    color: #015b7e;
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: bold;
+}
+input[type='file'] {
+    color: transparent;
+}
+.fa-times:hover{
+    cursor: pointer;
+}
+#last-url{
+    width: 90%;
+}
+#add-url{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    margin: 8px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    color: gray;
+}
+#add-url:hover{
+    cursor: pointer;
+    background-color: #ccc;
+}
+#form select{
+    width: 100%;
+    background-color: white;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: gray;
+}
+#complete-but3{
+    width: 35%;
+    height: 35px;
+    border: none;
+    background-color: #015b7e;
+    color: white;
+    border-radius: 5px;
+    margin: 8px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+#complete-but3:hover{
+    background-color: #08729c;
+    cursor: pointer;
+}
+#next-but3{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+#next-but3 a{
+    text-decoration: none;
+    color: #015b7e;
+    font-size: 14px;
+}
+@media (max-width: 1018px){
+    #form{
+        width: 70%;
+    }
+}
+@media (max-width: 842px){
+    #form{
+        width: 80%;
+    }
+    #popup{
+        width: 60%;
+    }
+}
+@media (max-width: 626px){
+    #form{
+        width: 100%;
+        margin-top: 0;
+    }
+    #popup{
+        width: 80%;
+    }
+    #topnav{
+        margin-bottom: 0;
+    }
+}
+@media (max-width: 538px){
+    #complete-but3{
+        width: 40%;
+    }
+}
+@media (max-width: 464px){
+    .page-num{
+        width: 25px;
+        height: 25px;
+    }
+    #form h2{
+        font-size: 20px;
+    }
+    #form h4{
+        font-size: 15px;
+    }
+    form.regthree p{
+        font-size: 14px;
+    }
+}
+@media (max-width: 344px){
+    #form h2{
+        font-size: 16px;
+    }
+}
+@media (max-width: 306px){
+    #form h4{
+        font-size: 13px;
+    }
+    #form input{
+        padding: 8px 20px;
+    }
+    #form select{
+        padding: 8px 20px;
+    }
+}

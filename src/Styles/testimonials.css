@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Quicksand;
+}
+
+#top-div2{
+    width: 100%;
+    /* height: 600px; */
+    height: 100vh;
+    background-image: linear-gradient(#e4f4fa5d, #E4F4FA),url("src/assets/afren-images/eloe_4.png");
+    background-position: center;
+    background-size: cover;
+    /* background-blend-mode: multiply; */
+    /* background-image: linear-gradient(#E4F4FA00, #E4F4FA); */
+}
+#testim-wrap{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#testim-tag{
+    width: 100px;
+    color: white;
+    background-color: #015B7E;
+    text-align: center;
+    border-radius: 12px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    padding: 3px 0;
+    font-size: 13px;
+}
+#centered-text{
+    width: 60%;
+    text-align: center;
+}
+#colored-text{
+    background: linear-gradient(to left, #3AC3D6, #015B7E);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.swiper2{
+    width: 100%;
+    z-index: 0;
+    margin-top: 1.875rem;
+}
+.swiper-wrapper2{
+    width: 100%;
+    /* height: 200px; */
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+.swiper-wrapper{
+    width: 50%;
+}
+.card2{
+    /* margin-top: 150px; */
+    background: white;
+    width: 40%;
+    padding: 20px;
+    pointer-events: none;
+    display: flex;
+    flex-direction: column;
+    /* box-shadow: 0 0 2em rgba(0, 0, 0, .2); */
+    text-align: start;
+    margin: 0 5%;
+    border: 1px solid #015B7E;
+    border-radius: 10px;
+    font-family: Quicksand;
+}
+.swiper-slide2:not(.swiper-slide-active){
+    filter: blur(1px);
+    border: none;
+}
+.inner-bottom{
+    display: flex;
+    margin-top: 40px;
+}
+.user-prof{
+    display: flex;
+    align-items: center;
+    width: 70%;
+}
+.prof-pic{
+    width: 20%;
+    margin-right: 10px;
+}
+.prof-pic img{
+    width: 100%;
+    height: 100%;
+}
+.checked{
+    color: orange;
+    font-size: 10px;
+}
+.client{
+    background-color: #DCF5FF;
+    height: 20px;
+    padding: 0 5px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+.client small{
+    color: #015B7E;
+    display: flex;
+    gap: 3px;
+    align-items: center;
+}
+.client small img{
+    width: 15%;
+}
+
+@media (max-width: 967px){
+    .prof-pic{
+        width: 25%;
+    }
+    .details p{
+        font-size: 14px;
+    }
+    .content p{
+        font-size: 14px;
+    }
+    .client small{
+        font-size: 11px;
+    }
+    .client small img{
+        width: 13%;
+    }
+}
+
+@media (max-width: 847px){
+    #testim-tag{
+        width: 100px;
+        margin-top: 80px;
+        margin-bottom: 30px;
+    }
+    #centered-text{
+        width: 80%;
+        text-align: center;
+    }
+    #centered-text h1{
+        font-size: 25px;
+    }
+    #centered-text p{
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 763px){
+    .card2{
+        width: 50%;
+    }
+}
+
+@media (max-width: 642px){
+    .prof-pic{
+        width: 50px;
+        height: 50px;
+    }
+    .inner-bottom{
+        margin-top: 20px;
+    }
+    .details p{
+        font-size: 12px;
+    }
+    .content p{
+        font-size: 12px;
+    }
+    .client small{
+        font-size: 10px;
+    }
+    .client small img{
+        width: 13%;
+    }
+}
+
+@media (max-width: 577px){
+    #testim-tag{
+        width: 100px;
+        margin-top: 70px;
+        margin-bottom: 20px;
+    }
+    #centered-text{
+        width: 95%;
+        text-align: center;
+    }
+    .card2{
+        width: 56%;
+    }
+}
+
+@media (max-width: 592px){
+    .card2{
+        width: 60%;
+        margin: 0 7%;
+    }
+}
+
+@media (max-width: 472px){
+    .card2{
+        width: 70%;
+        margin: 0 7%;
+    }
+    .prof-pic{
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 415px){
+    #testim-tag{
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 388px){
+    .card2{
+        width: 80%;
+        margin: 0 7%;
+    }
+}
+
+@media (max-width: 334px){
+    .card2{
+        width: 85%;
+        margin: 0 7%;
+    }
+}

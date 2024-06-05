@@ -1,0 +1,624 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* *::-webkit-scrollbar {
+    display: none;
+} */
+/* 
+@-moz-document url-prefix() {
+    html {
+        scrollbar-width: none;
+    }
+}  */
+
+:root {
+    --white-text-color: #ffff;
+    --white-bckg-color: #F7FAFE;
+
+    --grey-inactive1: #D9D9D9;
+    --grey-inactive2: #7F7F7F;
+
+    --black: #000000;
+
+    --blue0: #caf0fe;
+    --blue1: #3AC3D6;
+    --blue2: #015B7E;
+    --blue3: #01151d;
+
+    --green: #34A853;
+
+    --red: #EB3A3A;
+
+}
+
+body,html{
+    text-rendering: optimizeSpeed;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    font-family: 'Quicksand', sans-serif;
+    /* overflow-y: hidden; */
+}
+
+.vr-major-container {
+    width: 100vw;
+    height: 100vh;
+    overflow-y: scroll;
+    position: relative;
+    z-index: 100;
+}
+
+.virtual-workspace-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: var(--white-text-color);
+    border-bottom: 2px solid var(--grey-inactive1);
+    position: relative;
+    z-index: 100;
+}.vwn-images {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.vwn-back-btn {
+    width: 8px;
+    height: 15px;
+    position: relative;
+    top: 3px;
+}.vwn-back-btn img {
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.vwn-links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.vwn-dropdown-btn {
+    display: none;
+    width: 30px;
+    height: fit-content;
+    max-width: 30px;
+    max-height: fit-content;
+    cursor: pointer;
+}
+
+.vwn-drop-down {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.vwn-drop-down span {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 15px;
+    border-radius: 40px;
+    background-color: var(--blue0);
+    color: var(--blue2);
+    position: relative;
+    max-height: 40px;
+    min-height: 35px;
+}.vwn-drop-down span img {
+    width: 30px;
+    height: fit-content;
+    max-width: 30px;
+    max-height: fit-content;
+    cursor: pointer;
+}
+
+.vwn-drop-down span:nth-of-type(1) img {
+    margin-right: 10px;
+}
+.vwn-drop-down span:nth-of-type(1)::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 20px;
+    background-color: var(--blue2);
+    left: 50px;
+    border-radius: 5px;
+}
+.vwn-drop-down span:nth-of-type(2) img {
+    width: 20px;
+}
+
+.vwn-drop-down span a {
+    display: block;
+    text-decoration: none;
+    color: var(--blue2);
+}
+
+
+.virtual-workspace {
+    display: flex;
+    /* background-color: red; */
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+}
+
+.virtual-meeting-area {
+    width: 70%;
+    background-color: #F7FAFE;
+    padding-top: 80px;
+    position: relative;
+}
+
+.main-screen-viewport {
+    position: relative;
+    width: 80%;
+    height: 350px;
+    margin: 0px auto 15px auto;
+    border-radius: 15px;
+    padding: 20px;
+    background-image: url("../assets/afren-images3/2023-10-26-00-51-11.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.screen-resizer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(128, 128, 128, 0.501);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 0 0 auto;
+    cursor: pointer;
+}.screen-resizer img {
+    width: 20px;
+    height: 20px;
+    max-height: 20px;
+    max-width: 20px;
+}
+
+
+.virtual-call-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    left: 20px;
+}
+.virtual-call-info .screen-name {
+    width: fit-content;
+    padding: 5px 15px;
+    border-radius: 40px;
+    color: var(--white-text-color);
+    background-color: rgba(128, 128, 128, 0.501);
+}
+
+.voice-movement {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--blue2);
+}
+.voice-movement span {
+    width: 2px;
+    height: 10px;
+    background-color: var(--white-bckg-color);
+    animation-name: voicer;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.voice-movement span:nth-of-type(2) {animation-delay: 0.5s;}
+.voice-movement span:nth-of-type(3) {animation-delay: 1.2s;}
+.voice-movement span:nth-of-type(4) {animation-delay: 0.8s;}
+
+@keyframes voicer {
+    0% {
+        height: 10px;
+    }
+    100% {
+        height: 90%;
+    }
+}
+
+.participants {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.participants section {
+    position: relative;
+    width: 230px;
+    height: 140px;
+    border-radius: 10px;
+    background-color: #15181F;
+    padding: 10px;
+}
+.participants section:nth-of-type(1) {
+   background-image: url("../assets/afren-images3/close-up-young-businessman-having-work-video-call-while-staying-home-new-normal-lifestyle-business-concept.png");
+   background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+.participant-main-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.participant-main-image img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.video-toggle-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: rgba(128, 128, 128, 0.501);
+    margin: 0 0 0 auto;
+    cursor: pointer;
+}
+.video-toggle-btn img {
+    width: 16px;
+    height: fit-content;
+    max-height: 16px;
+    max-width: fit-content;
+}
+
+.video-toggle-btn.active::after {
+    content: "";
+    position: absolute;
+    width: 1.5px;
+    height: 18px;
+    background-color: var(--white-bckg-color);
+    transform: rotate(40deg);
+}
+
+.participant-opt {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+}
+.participant-name {
+    width: fit-content;
+    font-size: .7rem;
+    padding: 3px 10px;
+    border-radius: 40px;
+    color: var(--white-text-color);
+    background-color: rgba(128, 128, 128, 0.501);
+}
+
+.participant-mic-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--blue1);
+    cursor: pointer;
+}
+.participant-mic-toggle.active {
+    background-color: var(--red);
+}
+.participant-mic-toggle.active::after {
+    content: "";
+    position: absolute;
+    width: 1.5px;
+    height: 22px;
+    background-color: var(--white-bckg-color);
+    transform: rotate(40deg);
+}
+.participant-mic-toggle img {
+    width: 20px;
+    height: 20px;
+    max-height: 20px;
+    max-width: 20px;
+}
+
+.call-options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 40px;
+    padding: 10px;
+    height: 56px;
+    border-top: 2px solid var(--grey-inactive1);
+    background-color: var(--white-bckg-color);
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+.call-function-btns {
+    display: flex;
+    gap: 10px;
+}
+
+.call-function-btns span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    background-color: var(--blue0);
+    border-radius: 50%;
+    cursor: pointer;
+}.call-function-btns span img {
+    width: 20px;
+    height: fit-content;
+    max-width: 20px;
+    max-height: fit-content;
+}
+
+.call-function-btns span:nth-of-type(1) {
+    background-color: var(--blue2);
+}
+.call-function-btns span:nth-of-type(2) {
+    background-color: var(--blue2);
+}
+
+.incall-end-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white-text-color);
+    background-color: rgb(255, 22, 22);
+    min-width: 100px;
+    min-height: 40px;
+    padding: 8px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.incall-end-btn img {
+    display: none;
+}
+
+
+.virtual-message-area {
+    position: relative;
+    padding-top: 100px;
+    width: 30%;
+}
+
+.vma-subheading {
+    padding: 0 10px 30px 10px;
+}
+
+.vma-chat-space {
+    width: 100%;
+    padding: 10px 15px;
+    overflow-y: scroll;
+    height: 78%;
+    max-height: 550px;
+}
+.vma-chat-space::-webkit-scrollbar {
+    display: none;
+}
+
+.vcs-recipient, .vcs-replyer {
+    display: flex;
+    width: 95%;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+.vcs-replyer {
+    margin: 0 0 20px auto;
+    align-items:flex-end;
+}
+
+.vcs-recipient-info, .vcs-replyer-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+.vcs-recipient-info time, .vcs-replyer-info time {
+    font-size: .8rem;
+    color: var(--grey-inactive2);
+}
+.vcs-recipient-info time {
+    margin-left: 10%;
+}
+
+.vcs-replyer-info time {
+    margin-right: 10%;
+}
+
+.vcs-replyer-info figure, .vcs-recipient-info figure {
+    width: 35px;
+    height: 35px;
+    max-width: 35px;
+    max-height: 35px;
+    min-width: 35px;
+    min-height: 35px;
+    border-radius: 50%;
+}
+.vcs-replyer-info figure img, .vcs-recipient-info figure img{
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.vcs-recipient-message , .vcs-replyer-message{
+    padding: 5px;
+    border-radius: 5px;
+    color: var(--blue3);
+    background-color: var(--blue0);
+    font-size: .8rem;
+    line-height: 1.4;
+    width: 100%;
+    line-break: anywhere;
+}
+
+
+.vma-send-space {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px 15px 20px;
+    padding-top: 20px;
+    border-top: 2px solid var(--grey-inactive1);
+    height: 90px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: var(--white-text-color);
+}
+
+.vma-send-space textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    height: 40px;
+    background-color: #E6EFF2;
+    padding: 5px;
+    border-radius: 7px;
+}
+
+.vma-send-btn {
+    max-width: 25px;
+    max-height: 20px;
+    min-width: 25px;
+    min-height: 20px;
+    /* background-color: red; */
+}
+.vma-send-btn img {
+    max-width: 25px;
+    max-height: 20px;
+    min-width: 25px;
+    min-height: 20px;
+}
+
+
+@media (max-width: 950px) {
+    /* body {
+        background-color: red;
+    } */
+    .virtual-meeting-area {
+        width: 60%;
+    }
+
+    .main-screen-viewport {
+        width: 90%;
+        height: 300px;
+    }
+
+    .participants {
+        width: 90%;
+    }
+
+    .virtual-message-area {
+        width: 40%;
+    }
+}
+
+@media (max-width: 900px) {
+    /* body {
+        background-color: blue;
+    } */
+
+    .participants section {
+        width: 180px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 800px) {
+    /* body {
+        background-color: rgb(255, 230, 0);
+    } */
+
+    .vwn-dropdown-btn {
+        display: block;
+    }
+
+    .vwn-drop-down {
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        width: fit-content;
+        right: 0px;
+        top: 50px;
+        background-color: var(--white-bckg-color);
+        padding: 20px 0px;
+    }.vwn-drop-down span {
+        border-radius: 0px;
+        width: 100%;
+        padding-left: 30px;
+        padding-right: 30px;
+    }.vwn-drop-down span:nth-of-type(1)::after { 
+        left: 70px;
+    }
+
+    .vwn-dropdown-btn:hover ~ .vwn-drop-down {
+        display: flex;
+    }.vwn-drop-down:hover {
+        display: flex;
+    }
+
+    .virtual-meeting-area {
+        width: 100%;
+    }
+
+    .main-screen-viewport {
+        height: 360px;
+    }
+
+    .virtual-message-area {
+        display: none;
+    }
+    .participants {
+        justify-content: center;
+    }
+    .participants section {
+        width: 160px;
+    }
+
+    .call-options {
+        position: fixed;
+    }
+
+}
+
